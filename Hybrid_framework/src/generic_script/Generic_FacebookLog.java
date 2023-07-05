@@ -16,8 +16,10 @@ public class Generic_FacebookLog implements Framework_const1{
 	public void OpenApp() 
 	{
 		System.setProperty(gecko_key, gecko_value);
+		//launch the browser
 		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
+		//url will be provided
 		driver.get(base_url);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
