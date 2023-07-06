@@ -19,7 +19,7 @@ public static String getData(String sh, int r, int c)
 	  Sheet sheet=book.createSheet(sh);//created sheet
 	  Row row=sheet.createRow(r);//row is created
 	  Cell cell=row.createCell(c);	//cell is created
-	  value=cell.toString();
+	  	  value=cell.toString();//to store the value in specified cell
 	  }
 	  catch(Exception e)
 	  {
